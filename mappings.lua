@@ -3,6 +3,9 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
+local mark = require "harpoon.mark"
+local ui = require "harpoon.ui"
+
 return {
   -- first key is the mode
   n = {
@@ -31,7 +34,9 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+    ["<leader>a"] = { mark.add_file, desc = "Harpoon Add files" },
+    ["<C-e>"] = { ui.toggle_quick_menu, desc = "Quick menu" },
   },
   t = {
     -- setting a mapping to false will disable it
