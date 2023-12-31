@@ -10,5 +10,9 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.remote-development.distant-nvim" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.code-runner.compiler-nvim" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.tailwindcss" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
